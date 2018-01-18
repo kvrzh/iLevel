@@ -1,0 +1,121 @@
+body {
+    background: #f7f7f7;
+}
+
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+}
+
+.main #find, .main #create {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #fff;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main #find input, .main #find select, .main #create input, .main #create select {
+    background: #f7f7f7;
+    width: 100%;
+    font-weight: 300;
+    margin: 5px 0;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: 1px solid #ffffff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    height: auto;
+}
+
+.main #find input[type="submit"], .main #find select[type="submit"], .main #create input[type="submit"], .main #create select[type="submit"] {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+}
+
+.main #find {
+    border-bottom: 2px solid #f39c12;
+}
+
+.main #create {
+    border-bottom: 2px solid #2ecc71;
+}
+
+.main #create input[type="submit"] {
+    background: #2ecc71;
+}
+
+.main .table {
+    padding: 0 2rem;
+}
+
+.main table {
+    background: #fff;
+    margin: 2rem 0;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.main table tr {
+    font-size: 16px;
+}
+
+.main table tr td, .main table tr th {
+    text-align: center;
+}
+
+.main table tr.loss {
+    background: rgba(231, 76, 60, 0.3);
+}
+
+.main table tr.profit {
+    background: rgba(46, 204, 113, 0.3);
+}
+
+.main table td {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.main table td input, .main table td select {
+    width: 100%;
+}
+
+.main table td.count {
+    border-left: 2px solid;
+}
+
+.main table .actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.main table .actions i {
+    cursor: pointer;
+}

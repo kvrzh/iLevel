@@ -1,0 +1,84 @@
+body {
+  background: #f7f7f7;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  #find, #create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    input, select {
+      background: #f7f7f7;
+      width: 100%;
+      font-weight: 300;
+      margin: 5px 0;
+      font-size: 16px;
+      padding: 10px 10px;
+      border: 1px solid #ffffff;
+      transition: 0.3s;
+      border-radius: 0;
+      box-shadow: none;
+      cursor: pointer;
+      height: auto;
+      &[type="submit"] {
+        background: #f39c12;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+  #find {
+    border-bottom: 2px solid #f39c12;
+  }
+  #create {
+    border-bottom: 2px solid #2ecc71;
+    input[type="submit"] {
+      background: #2ecc71;
+    }
+  }
+  .table {
+    padding: 0 2rem;
+  }
+  table {
+    background: #fff;
+    margin: 2rem 0;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3);
+    tr {
+      font-size: 16px;
+      td, th {
+        text-align: center;
+      }
+      &.loss {
+        background: rgba(231, 76, 60, 0.3);
+      }
+      &.profit {
+        background: rgba(46, 204, 113, 0.3);
+      }
+    }
+    td {
+      max-width: 150px;
+      margin: 0 auto;
+      input, select {
+        width: 100%;
+      }
+      &.count {
+        border-left: 2px solid;
+      }
+    }
+    .actions {
+      i {
+        cursor: pointer;
+      }
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
